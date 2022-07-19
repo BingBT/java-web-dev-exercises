@@ -7,7 +7,7 @@ public class Area {
         Area area = new Area();
         area.calculateArea();
         //Declare class variables here
-
+    }
 
 
         //Create Constructors here
@@ -24,10 +24,13 @@ public class Area {
 
         //Calculate the area
         //Area = pi * radius * radius
-        Double area = 3.14 * myUsersRadius * myUsersRadius;
+        Double area = Circle.getArea(myUsersRadius);
 
         //Print the result
         System.out.println(area);
+
+        //close the scanner
+            input.close();
         }
 
 }
